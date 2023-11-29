@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job post</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="jobpost1.css">
+        <link rel="icon" type="image/x-icon" href="../sourceimage/logo.jpg">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <section id="header"><img src="../sourceimage/logo.jpg" class="logo" alt="">
+            <div>
+                <div id="menu-icon" class="hidden">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">
+            <form action="jobpost.html">
+                <header>Post A Job</header>
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="Company">Company Name</label>
+                        <input type="text" id="company" placeholder="Company name" />
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Event Title">Event Title</label>
+                        <div class="user-select">
+                            <select id="event" name="event">
+                                <option value="">Select event</option>
+                                <option value="Product Launches">Product Launches</option>
+                                <option value="Networking Events">Networking Events</option>
+                                <option value="Wedding Events">Wedding Events</option>
+                                <option value="Parties and Social Events">Parties and Social Events</option>
+                                <option value="Music and Entertainment Events">Music and Entertainment Events</option>
+                                <option value="Sports Events">Sports Events</option>
+                                <option value="Cultural and Arts Events">Cultural and Arts Events</option>
+                                <option value="Outdoor and Adventure Events">Outdoor and Adventure Events</option>
+                                <option value="Tech and Innovation Conferences">Tech and Innovation Conferences</option>
+                                <option value="Fashion Shows">Fashion Shows</option>
+                                <option value="Health and Wellness Events">Health and Wellness Events</option>
+                                <option value="Educational and Academic Events">Educational and Academic Events</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Skill Required">Skill Required</label>
+                        <div class="user-select">
+                            <select id="Skill Required" name="Skill Required">
+                                <option value="">Select Job title</option>
+                                <option value="Product Demonstrators">Product Demonstrators</option>
+                                <option value="Event Photographers/ Videographers">Event Photographers/ Videographers</option>
+                                <option value="Hosts and Greeters">Hosts and Greeters</option>
+                                <option value="Wedding Planners and Coordinators">Wedding Planners and Coordinators</option>
+                                <option value="Catering Staff">Catering Staff</option>
+                                <option value="Event Servers and Bartenders">Event Servers and Bartenders</option>
+                                <option value="DJs or Entertainment">DJs or Entertainment</option>
+                                <option value="Security Personnel">Security Personnel</option>
+                                <option value="Ticket Collectors and Ushers">Ticket Collectors and Ushers</option>
+                                <option value="Event Security">Event Security</option>
+                                <option value="Gallery Attendants">Gallery Attendants</option>
+                                <option value="Stage Crew">Stage Crew</option>
+                                <option value="Adventure Guides">Adventure Guides</option>
+                                <option value="Event Crew">Event Crew</option>
+                                <option value="Tech Support Staff">Tech Support Staff</option>
+                                <option value="Workshop Facilitators">Workshop Facilitators</option>
+                                <option value="Models">Models</option>
+                                <option value="Backstage Crew">Backstage Crew</option>
+                                <option value="Fitness Instructors">Fitness Instructors</option>
+                                <option value="Health Screeners">Health Screeners</option>
+                                <option value="Event Registration Staff">Event Registration Staff</option>
+                                <option value="Workshop Facilitators">Workshop Facilitators</option>
+                                <option value="others">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="City">City</label><br>
+                        <div class="user-select">
+                            <select id="City" name="city">
+                                <option value="">Select city</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Hosur">Hosur</option>
+                            </select>
+                        </div>                    
+                    </div>
+                    <div class="user-input-box">
+                        <label for="vacancies">No.of vacancies</label>
+                        <input type="text" placeholder="No.of vacancies"/> 
+                    </div>
+                    <div class="user-input-box">
+                        <label for="salary">Salary in ₹(per hour)</label>
+                        <input type="text" placeholder="Enter Salary in Rs"/> 
+                    </div>                
+                </div>
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="Venue">Venue</label><br>
+                        <div class="user-select">
+                            <select id="venue" name="venue">
+                                <option value="">Select Venue</option>
+                                <option value="The Marina mall">The Marina mall</option>
+                                <option value="Vivira Mall">Vivira Mall</option>
+                            </select>
+                        </div>                    
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Event Date">Event Date</label>
+                        <input type="date" /> 
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Start-time">Start Time</label>
+                        <input type="time"/> 
+                    </div>                
+                </div>
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="Job description">Job description</label>
+                        <textarea id="Jobdescription" name="Jobdescription" rows="6" cols="80" placeholder="Job description"></textarea>    
+                    </div>                
+                </div>
+                <div class="main-user-info" id="last">
+                    <div class="submit-btn">
+                        <input type="submit" value="Post"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
